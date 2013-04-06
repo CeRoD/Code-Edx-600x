@@ -29,6 +29,6 @@ else:
 		if num**pwr == abs(z):
 			print '\t And the numbers are: ' + str(num) + ' as the root'+\
 				' and ' + str(pwr) + ' as the power.'
-		#else:
-		#	print '\t But such numbers that root**pwr equals number enter,\
-		#			 \t \t does not exist.'
+		else:
+			print '\t But such numbers that root**pwr equals number enter,\
+					 \t \t does not exist.'
