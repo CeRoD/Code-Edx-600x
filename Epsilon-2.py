@@ -3,22 +3,20 @@
 #### Exhaustive Enumeration is a technique that works #### 
 #### only if the set of values being searched includes #### 
 #### the answer. #### 
-#### That means that if the number is between 0 and 1 will not ###
-#### works. ###
+
+### In this one is possible to find the squate root of ###
+### a number between 0 and 1.	###
+
 
 x = float(raw_input('Enter a number: '))
-epsilon = 0.01			#I think that this determinated
-						# the precision of the number, I mean
-						# if is close 0.01 to the numbre the number
-						# is a close enough square root.
+epsilon = 0.01
 step = epsilon**2
 numGuesses = 0
 ans = 0.0
 
-while abs(ans**2 - x) >= epsilon and ans <= x:
-	print 'ans =', ans, ' Epsilon=',epsilon, ' step=',step
-    	ans += step
-    	numGuesses += 1
+while abs(ans**2 - x) >= epsilon and ans*ans <= x:
+    ans += step
+    numGuesses += 1
 print 'numGuesses =', numGuesses
 print ans , step
 if abs(ans**2 - x) >= epsilon:
