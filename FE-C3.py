@@ -13,7 +13,7 @@ num = 0
 pwr = 1
 
 if z < 0:
-	print 'The root is not a Real Number, sorry'
+	print '\n The root is not a Real Number, sorry'
 else:
 	while num**2 < abs(z):
 		num = num + 1
@@ -21,14 +21,14 @@ else:
 					## for see which value takes the
 					## num variable.
 	if num**2 != abs(z):
-		print 'The number ' + str(abs(z)) + ' does not have square root'
+		print '\n The number ' + str(abs(z)) + ' does not have square root'
 	else:
-		print 'The number has square root: '
+		print '\n The number has square root: '
 		while (pwr > 0 and pwr < 6) and num**pwr != abs(z):
 				pwr = pwr + 1
 		if num**pwr == abs(z):
-			print '\t And the numbers are: ' + str(num) + ' as the root'+\
+			print '\n \t And the numbers are: ' + str(num) + ' as the root'+\
 				' and ' + str(pwr) + ' as the power.'
 		else:
-			print '\t But such numbers that root**pwr equals number enter,\
+			print '\n \t But such numbers that root**pwr equals number enter,\
 					 \t \t does not exist.'
