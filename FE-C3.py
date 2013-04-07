@@ -10,7 +10,7 @@
 
 z = int(raw_input('Ingrese un numero entero: '))
 num = 0
-pwr = 3
+pwr = 1
 
 if z < 0:
 	print 'The root is not a Real Number, sorry'
