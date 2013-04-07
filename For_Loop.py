@@ -1,5 +1,5 @@
-x = 10
-y = 2
+x = 3
 for j in range(x):
-	for k in range(y):
+	for k in range(x):
 		print k
+		x = 4
