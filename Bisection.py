@@ -1,8 +1,8 @@
 # Using Bisection search to approximate square root.
-####		Bisection search	#####
+####		Bisection search		#####
 
 x = float(raw_input('Ingrese un numero: '))
-epsilon = 0.0001		# This is value the determinate
+epsilon = 0.01		# This is the value that determinate
 						# how close the answer is to the
 						# given number.
 numGuesses = 0
@@ -11,7 +11,7 @@ high = max(1.0, x)
 ans = (high + low)/2.0
 
 while abs(ans**2 - x) >= epsilon:
-	print 'low =',low, 'high =',high, 'ans =',ans
+	print 'low =',low, 'high =',high, 'ans =',ans ,'ans**2 =', ans**2
 	numGuesses += 1
 	if ans**2 < x:
 		low = ans
