@@ -11,12 +11,15 @@ epsilon = 0.01			#I think that this determinated
 						# the precision of the number, I mean
 						# if is close 0.01 to the numbre the number
 						# is a close enough square root.
-step = epsilon**2
+step = epsilon**2		# According to the book this is what
+						# determinate the steps (duh), so:
+						# epsilon**3 gives smaller steps.
 numGuesses = 0
 ans = 0.0
 
 while abs(ans**2 - x) >= epsilon and ans <= x:
-	print 'ans =', ans, ' Epsilon=',epsilon, ' step=',step
+	print 'ans =', ans, ' Epsilon=',epsilon, ' step=',step # Just for see
+										#what is doing.
     	ans += step
     	numGuesses += 1
 print 'numGuesses =', numGuesses

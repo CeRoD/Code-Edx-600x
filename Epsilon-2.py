@@ -15,6 +15,7 @@ numGuesses = 0
 ans = 0.0
 
 while abs(ans**2 - x) >= epsilon and ans*ans <= x:
+	print ans*ans, ans
     ans += step
     numGuesses += 1
 print 'numGuesses =', numGuesses
